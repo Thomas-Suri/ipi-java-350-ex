@@ -4,4 +4,4 @@ addons:
     organization: "thomas-suri-github"
 script:
   # other script steps might be done before running the actual analysis
-  - sonar-scanner
+  - mvn clean org.jacoco:jacoco-maven-plugin:prepare-agent install sonar:sonar -Dsonar.projectKey=thomas-suri_ipi-java-350-ex
