@@ -1,7 +1,7 @@
 language: java
 addons:
   sonarcloud:
-    organization: "thomas-suri-github" # the key of the org you chose at step #3
+    organization: "thomas-suri-github"
 script:
   # other script steps might be done before running the actual analysis
   - sonar-scanner
